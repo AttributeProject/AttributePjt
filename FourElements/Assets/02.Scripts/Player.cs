@@ -6,12 +6,13 @@ public class Player : Characters
 {
     private Rigidbody2D rigid;
     Collider2D climbObject; //오르기 명령을 내릴 경우 올라야 할 오브젝트의 collider
+
     // Start is called before the first frame update
     void Start()
     {
         IsJump=false;
-        SetIsMove(true);
-        SetWeight(2f);
+        IsMove=true;
+        Weight=2f;
         Speed=10f;
         JumpPower=10f;
         rigid = GetComponent<Rigidbody2D>();
@@ -23,6 +24,7 @@ public class Player : Characters
         Move();
         Jump();
         if (CanClimb) Climb(climbObject);
+        Debug.Log(IsJump);
     }
 
     //이동
@@ -35,9 +37,9 @@ public class Player : Characters
     //점프
     private void Jump()
     {
-        if (Input.GetKey(KeyCode.Space) && IsJump)
+        if (Input.GetKey(KeyCode.Space) && !IsJump)
         {
-            rigid.AddForce(Vector2.up * JumpPower / GetWeight(), ForceMode2D.Impulse);
+            rigid.AddForce(Vector2.up * JumpPower / Weight, ForceMode2D.Impulse);
             IsJump=true;
         }
     }
@@ -55,6 +57,7 @@ public class Player : Characters
         Debug.Log("!!");
      
     }
+
     //------------------------------------------Collision 처리-----------------------------------------------
     //collision과 접촉을 한 경우
     private void OnCollisionEnter2D(Collision2D collision)
