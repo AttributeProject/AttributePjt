@@ -17,86 +17,23 @@ public class Objects : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void SetIsRise(bool value)
-    {
-        isRise = value;
-    }
-    public bool GetIsRise()
-    {
-        return isRise;
-    }
-    public void SetIsFired(bool value)
-    {
-        isFired = value;
-    }
-    public bool GetIsFired()
-    {
-        return isFired;
-    }
-    public void SetIsMove(bool value)
-    {
-        isMove = value;
-    }
-    public bool GetIsMove()
-    {
-        return isMove;
-    }
-    public void SetIsMoved(bool value)
-    {
-        isMoved = value;
-    }
-    public bool GetIsMoved()
-    {
-        return isMoved;
-    }
-    public void SetIsDestroyed(bool value)
-    {
-        isDestroyed = value;
-    }
-    public bool GetIsDestroyed()
-    {
-        return isDestroyed;
-    }
-    public void SetIsRolling(bool value)
-    {
-        isRolling = value;
-    }
-    public bool GetIsRolling()
-    {
-        return isRolling;
-    }
-    public void SetHeight(float value)
-    {
-        height = value;
-    }
-    public float GetHeight()
-    {
-        return height;
-    }
-    public void SetWidth(float value)
-    {
-        width = value;
-    }
-    public float GetWidth()
-    {
-        return width;
-    }
-    public void SetWeight(float value)
-    {
-        weight = value;
-    }
-    public float GetWeight()
-    {
-        return weight;
-    }
+    public bool IsRise { get => isRise; set => isRise = value; }
+    public bool IsFired { get => isFired; set => isFired = value; }
+    public bool IsMove { get => isMove; set => isMove = value; }
+    public bool IsMoved { get => isMoved; set => isMoved = value; }
+    public bool IsDestroyed { get => isDestroyed; set => isDestroyed = value; }
+    public bool IsRolling { get => isRolling; set => isRolling = value; }
+    public float Height { get => height; set => height = value; }
+    public float Width { get => width; set => width = value; }
+    public float Weight { get => weight; set => weight = value; }
 
 }
