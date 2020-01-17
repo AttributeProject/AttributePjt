@@ -6,6 +6,8 @@ public class Stuffs : Objects
 {
     private bool isMaked; // 소환된 것인가
 
+    public bool IsMaked { get => isMaked; set => isMaked = value; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +20,5 @@ public class Stuffs : Objects
         
     }
 
-    public void SetIsMaked(bool value)
-    {
-        isMaked = value;
-    }
-    public bool GetIsMaked()
-    {
-        return isMaked;
-    }
+ 
 }
