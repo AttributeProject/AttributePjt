@@ -4,34 +4,76 @@ using UnityEngine;
 
 public class Player : Characters
 {
+    private bool[] isElementGet = { true, false, false, false }; // 불, 물, 흙, 바람 속성을 가지고 있는가
     private Rigidbody2D rigid;
     Collider2D climbObject; //오르기 명령을 내릴 경우 올라야 할 오브젝트의 collider
+
 
     // Start is called before the first frame update
     void Start()
     {
+        Property = 0;
         IsJump=false;
         IsMove=true;
-        Weight=2f;
-        Speed=10f;
-        JumpPower=10f;
         rigid = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        SetStats();
         Move();
         Jump();
         if (CanClimb) Climb(climbObject);
-        Debug.Log(IsJump);
+    }
+
+    private void SetStats()
+    {
+        if(Property == 0)
+        {
+            Weight = 1f;
+            Speed = 15f;
+            JumpPower = 25f;
+        }
+        else if(Property == 1)
+        {
+            Weight = 2f;
+            Speed = 10f;
+            JumpPower = 20f;
+        }
+        else if(Property == 2)
+        {
+            Weight = 4f;
+            Speed = 10f;
+            JumpPower = 20f;
+        }
+        else if(Property == 3)
+        {
+            Weight = 0.5f;
+            Speed = 10f;
+            JumpPower = 20f;
+        }
+        else
+        {
+            Weight = 2f;
+            Speed = 10f;
+            JumpPower = 20f;
+        }
     }
 
     //이동
     private void Move()
     {
-        float h = transform.position.x + Input.GetAxis("Horizontal") * Time.deltaTime * Speed;
-        transform.position = new Vector2(h, transform.position.y);
+        float h = Input.GetAxis("Horizontal");
+        if (h < 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 180f, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        transform.position = new Vector2(transform.position.x + h * Time.deltaTime * (Speed/Weight), transform.position.y);
     }
 
     //점프
@@ -46,23 +88,26 @@ public class Player : Characters
 
     private void Climb(Collider2D col)
     {
-        float dir= Input.GetAxis("Vertical") * Time.deltaTime * Speed;
-        if(Input.GetKeyDown(KeyCode.UpArrow)|| Input.GetKeyDown(KeyCode.DownArrow) || 
-            Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S))
+        float dir = Input.GetAxis("Vertical") * Time.deltaTime * (Speed / Weight);
+        if(dir != 0f)
         {
-            this.transform.position = new Vector3(col.transform.position.x, this.transform.position.y, 0);
-            Debug.Log("얍");
+            rigid.gravityScale = 0;
+            this.transform.position += new Vector3(0, dir, 0);
+            Debug.Log(dir);
         }
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y+ dir, 0);
-        Debug.Log("!!");
-     
     }
 
     //------------------------------------------Collision 처리-----------------------------------------------
     //collision과 접촉을 한 경우
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ground")
+        Collider2D collider2D = collision.gameObject.GetComponent<Collider2D>();
+        if(CanClimb == true)
+            collider2D.isTrigger = false;
+        else
+            collider2D.isTrigger = true;
+
+        if (collision.gameObject.tag == "Ground")
         {
             IsJump=false;
         }
@@ -80,7 +125,7 @@ public class Player : Characters
     }
 
     //------------------------------------------Trigger 처리-------------------------------------------------
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Ladder")
         {
@@ -92,8 +137,12 @@ public class Player : Characters
     {
         if (collision.gameObject.tag == "Ladder")
         {
+            rigid.gravityScale = 2f;
             CanClimb = false;
         }
     }
-    
+
+
+    public bool[] IsElementGet { get => isElementGet; set => isElementGet = value; }
+
 }
