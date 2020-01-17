@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Moveable : Stuffs
+public class Unmovable : Stuffs
 {
     // Start is called before the first frame update
     void Start()
