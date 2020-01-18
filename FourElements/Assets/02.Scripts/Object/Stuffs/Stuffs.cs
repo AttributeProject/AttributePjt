@@ -8,14 +8,13 @@ public class Stuffs : Objects
 
     public bool IsMaked { get => isMaked; set => isMaked = value; }
 
-    // Start is called before the first frame update
-    void Start()
+    override protected void Awake()
     {
-        
+        base.Awake();
+        IsMaked = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    override protected void Update()
     {
         
     }

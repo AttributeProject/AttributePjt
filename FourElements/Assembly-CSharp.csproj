@@ -67,7 +67,14 @@
     <Compile Include="Assets\02.Scripts\Object\Enemys\Enemys.cs" />
     <Compile Include="Assets\02.Scripts\Object\Objects.cs" />
     <Compile Include="Assets\02.Scripts\Object\Player.cs" />
+    <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\AttributeBox.cs" />
+    <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\bonFire.cs" />
+    <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\Grass.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\ladder.cs" />
+    <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\Rope.cs" />
+    <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\SquareStone.cs" />
+    <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\Wall_canBrake.cs" />
+    <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\WoodBox.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\Moveable.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\Stuffs.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\Unmoveable.cs" />
