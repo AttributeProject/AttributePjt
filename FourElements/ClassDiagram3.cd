@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Characters" Collapsed="true">
+    <Position X="1.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAACAAAAAAAAAAABQAAAAQAAQQAAAUEAAAE=</HashCode>
+      <FileName>Assets\02.Scripts\Object\Characters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemys" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAgCAACAAAAAgAAAAAAgAAAACAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\02.Scripts\Object\Enemys\Enemys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objects" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQEQiRAQEAkAAEAgCAAAowAACBMAAEgQCAgAAAAAEA=</HashCode>
+      <FileName>Assets\02.Scripts\Object\Objects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAACAAoBAAAAAAAAAAAAAAEBMAAAAACAgAAAAAEA=</HashCode>
+      <FileName>Assets\02.Scripts\Object\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttributeBox" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\02.Scripts\Object\Stuffs\ConcreteStuff\AttributeBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ladder" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQFAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\02.Scripts\Object\Stuffs\ConcreteStuff\ladder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rope" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\02.Scripts\Object\Stuffs\ConcreteStuff\Rope.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wall_canBrake" Collapsed="true">
+    <Position X="14" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\02.Scripts\Object\Stuffs\ConcreteStuff\Wall_canBrake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Moveable" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\02.Scripts\Object\Stuffs\Moveable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stuffs" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\02.Scripts\Object\Stuffs\Stuffs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unmoveable" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\02.Scripts\Object\Stuffs\Unmoveable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestRoomUIManager" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAIgEAAwEAEAgAAAACIAKABAAAAIAAAEEAAEI=</HashCode>
+      <FileName>Assets\02.Scripts\UI\TestRoomUIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIManager" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\02.Scripts\UI\UIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

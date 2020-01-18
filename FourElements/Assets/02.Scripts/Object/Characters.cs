@@ -17,4 +17,13 @@ public class Characters : Objects
     public int Property { get => property; set => property = value; }
     public bool IsJump { get => isJump; set => isJump = value; }
     public bool CanClimb { get => canClimb; set => canClimb = value; }
+
+    protected override void Update()
+    {
+        base.Update();
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Debug.Log("click up arrow key");
+        }
+    }
 }
