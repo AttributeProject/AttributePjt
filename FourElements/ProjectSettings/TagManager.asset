@@ -7,6 +7,11 @@ TagManager:
   - Ground
   - WoodBox
   - Ladder
+  - ElementBox(Water)
+  - SeedGround
+  - Grass
+  - Propeller
+  - Rail
   layers:
   - Default
   - TransparentFX
@@ -16,9 +21,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Ground
+  - CaveGround
+  - Player
   - 
   - 
   - 

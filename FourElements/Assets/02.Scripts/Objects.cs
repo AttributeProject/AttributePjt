@@ -13,6 +13,7 @@ public class Objects : MonoBehaviour
     private float height; // 높이
     private float width; // 너비
     private float weight; // 무게
+    private float fireTime; // 타는데 걸리는 시간
 
     // Start is called before the first frame update
     void Start()
@@ -35,5 +36,5 @@ public class Objects : MonoBehaviour
     public float Height { get => height; set => height = value; }
     public float Width { get => width; set => width = value; }
     public float Weight { get => weight; set => weight = value; }
-
+    public float FireTime { get => fireTime; set => fireTime = value; }
 }
