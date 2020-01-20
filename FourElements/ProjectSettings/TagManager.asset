@@ -7,7 +7,15 @@ TagManager:
   - Ground
   - WoodBox
   - Ladder
+<<<<<<< HEAD
   - UI_DROPDOWN
+=======
+  - ElementBox(Water)
+  - SeedGround
+  - Grass
+  - Propeller
+  - Rail
+>>>>>>> tutorial
   layers:
   - Default
   - TransparentFX
@@ -17,9 +25,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Ground
+  - CaveGround
+  - Player
   - 
   - 
   - 
