@@ -27,19 +27,21 @@ public class Player : Characters
     override protected void Awake()
     {
         curAttribute = Attribute.FIRE;
+        IsElementGet[0] = true;
         IsJump = false;
         CanMove = true;
         Weight = 2f;
         Speed = 10f;
         JumpPower = 10f;
         rigid = GetComponent<Rigidbody2D>();
+        SetStats();
     }
 
     // Update is called once per frame
     override protected void Update()
     {
         base.Update();
-        SetStats();//근데 이건 좀 아닌덧 매 프레임마다 스탯 초기화됨 ㅇㅇ
+        
         CanDestroyed = false;
         if (Input.GetKey(KeyCode.Tab))
         {
@@ -162,6 +164,7 @@ public class Player : Characters
             gameObject.GetComponent<SpriteRenderer>().sprite = appearance[3];
 
         }
+        SetStats();
         elementsTab.transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 127);
         elementsTab.transform.GetChild(1).GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 127);
 
@@ -223,7 +226,7 @@ public class Player : Characters
             if (curAttribute == Attribute.FIRE && col.gameObject.GetComponent<Objects>().CanCatchFired)
             {
                 Debug.Log("burn");
-                col.gameObject.GetComponent<Objects>().res_Fire();
+                // col.gameObject.GetComponent<Objects>().res_Fire();
 
             }
         if (Input.GetKey(KeyCode.UpArrow))

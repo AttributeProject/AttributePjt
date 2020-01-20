@@ -36,7 +36,6 @@ public class Grass : Unmovable
         base.Update();
         if (IsBurning)
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = firing;
             CurTimeToBurn += Time.deltaTime;
             if (CurTimeToBurn < TimeToBurn)
             {
@@ -56,9 +55,19 @@ public class Grass : Unmovable
         }
     }
  
+    public override void res_Fire()
+    {
+        Debug.Log("풀 Fire Response");
+        IsBurning = true;
+        gameObject.GetComponent<SpriteRenderer>().sprite = firing;
+    }
     public override void res_Water()
     {
         Debug.Log("풀 Water Response");
+        IsBurning = false;
+        IsFired = true;
+        IsWatered = true;
+        gameObject.GetComponent<SpriteRenderer>().sprite = fired;
     }
 
 }

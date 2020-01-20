@@ -60,17 +60,17 @@ public class Objects : MonoBehaviour
     }
     virtual protected void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag != "Ground")
-            if (col.gameObject.GetComponent<Objects>().CanDestroyed)
-            {
-                //충격량이 일정 이상일 경우
-                if (true/* maxIndureImpurse <받은 충격 */)
-                {
-                    //부서지는 시각적 효과 함수();
-                    Debug.Log(col.relativeVelocity);
-                    // Destroy(col.gameObject);
-                }
-            }
+       //if (col.gameObject.tag != "Ground")
+            //if (col.gameObject.GetComponent<Objects>().CanDestroyed)
+            //{
+            //    //충격량이 일정 이상일 경우
+            //    if (true/* maxIndureImpurse <받은 충격 */)
+            //    {
+            //        //부서지는 시각적 효과 함수();
+            //        Debug.Log(col.relativeVelocity);
+            //        // Destroy(col.gameObject);
+            //    }
+            //}
     }
     virtual public void res_UpArrow()
     {

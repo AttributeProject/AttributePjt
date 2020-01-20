@@ -17,9 +17,11 @@ public class FireParticle : MonoBehaviour
     }
     private void OnParticleCollision(GameObject other)
     {
-        if (other.tag == "Grass" && !other.gameObject.GetComponent<Grass>().IsBurning)
+        if (other.tag == "Grass")
         {
-            other.gameObject.GetComponent<Grass> ().IsFired = true;
+            Grass grass = other.gameObject.GetComponent<Grass>();
+            if(!grass.IsFired && !grass.IsBurning)
+                other.gameObject.GetComponent<Grass>().res_Fire();
         }
     }
 }
