@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SquareStone : Unmoveable
+public class SquareStone : Unmovable
 {
     protected override void Awake()
     {

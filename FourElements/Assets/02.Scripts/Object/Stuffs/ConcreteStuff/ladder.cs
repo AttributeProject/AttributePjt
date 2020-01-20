@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ladder : Unmoveable
+public class ladder : Unmovable
 {
     [SerializeField]
     private Sprite[] ladderSprite = new Sprite[4];

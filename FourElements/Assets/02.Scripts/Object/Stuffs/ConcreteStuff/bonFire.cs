@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bonFire : Unmoveable
+public class bonFire : Unmovable
 {
     override protected void Awake()
     {

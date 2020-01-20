@@ -8,7 +8,7 @@ public class TestRoomUIManager : MonoBehaviour
 {
     public Dropdown objectDropdown;
     public Canvas canvas;
-    private Camera camera;
+    private Camera cam;
 
 
     Vector2 mousePos;   //마우스 포지션
@@ -27,7 +27,7 @@ public class TestRoomUIManager : MonoBehaviour
     RaycastHit2D hit;
     private void Awake()
     {
-        camera = this.gameObject.GetComponent<Camera>();
+        cam = this.gameObject.GetComponent<Camera>();
         gr = canvas.GetComponent<GraphicRaycaster>();
         ped = new PointerEventData(null);
 
@@ -42,7 +42,7 @@ public class TestRoomUIManager : MonoBehaviour
         if (isTracking)
         {
             Debug.Log(mousePos);
-            objPrefab.transform.position = (Vector2)camera.ScreenToWorldPoint(mousePos);
+            objPrefab.transform.position = (Vector2)UnityEngine.Camera.main.ScreenToWorldPoint(mousePos);
         }
 
 
@@ -75,7 +75,7 @@ public class TestRoomUIManager : MonoBehaviour
 
             //-------------------------------------------오브젝트 클릭 판별 및 처리------------------------
             //충돌한 오브젝트 존재
-            if (hit=Physics2D.GetRayIntersection(Camera.main.ScreenPointToRay(mousePos),Mathf.Infinity))
+            if (hit=Physics2D.GetRayIntersection(UnityEngine.Camera.main.ScreenPointToRay(mousePos),Mathf.Infinity))
             {
                 Debug.Log(hit.transform.name);
                 //삭제모드 활성화 상태인경우 오브젝트 삭제하고 모드가 종료됨

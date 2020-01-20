@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WoodBox : Moveable
+public class WoodBox : Movable
 {
     protected override void Awake()
     {

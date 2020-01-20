@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2888621066557656188}
   - component: {fileID: 7906375110877625747}
-  - component: {fileID: 2362273478561397928}
   - component: {fileID: 1393906996391988220}
   - component: {fileID: 8614879409699054612}
   m_Layer: 0
@@ -73,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 22b4dc60d80100b4fbebae10c630761c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca3f3f055a0ae29468925281f01fa2ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,21 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2362273478561397928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2024495563375885137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40876fb2c55e283448da1ef4f537ad1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firing: {fileID: 21300000, guid: 1405c08721a48574ab1dc50a4b3c51ab, type: 3}
-  fired: {fileID: 21300000, guid: 3dcc8a606ecfbaa41b00665bef3dd265, type: 3}
-  vapor: {fileID: 8745430559572222268, guid: acc776c658bbd554399733e66e3b7cae, type: 3}
 --- !u!61 &1393906996391988220
 BoxCollider2D:
   m_ObjectHideFlags: 0

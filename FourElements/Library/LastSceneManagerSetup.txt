@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/temp.unity
-=======
 - path: Assets/01.Scenes/Tutorial.unity
->>>>>>> tutorial
   isLoaded: 1
   isActive: 1

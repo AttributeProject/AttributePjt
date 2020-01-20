@@ -21,10 +21,10 @@ public class WaterParticle : MonoBehaviour
         {
             other.transform.GetChild(0).gameObject.SetActive(true);
         }
-        if(other.tag == "Grass" && other.gameObject.GetComponent<Grass>().NowFired)
+        if(other.tag == "Grass" && other.gameObject.GetComponent<Grass>().IsBurning)
         {
-            other.gameObject.GetComponent<Grass>().NowFired = false;
-            other.gameObject.GetComponent<Grass>().FiredDone = true;
+            other.gameObject.GetComponent<Grass>().IsBurning = false;
+            other.gameObject.GetComponent<Grass>().IsFired = true;
             other.gameObject.GetComponent<Grass>().IsWatered = true;
         }
     }

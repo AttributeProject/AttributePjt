@@ -10,6 +10,7 @@ public class Objects : MonoBehaviour
     private float timeToBurn;//타는데 걸리는 시간
     private float curTimeToBurn;//현재 불이붙고있는 과정에서 경과한 시간
     private bool getFired;  // 지금 불이 붙고 있는 과정인가
+    private bool isFired;       //이미 탄 상태인가
     private bool canMove; // 움직일 수 있는가
     private bool canMoved; // 움직여질 수 있는가
     private bool canDestroyed; // 파괴될 수 있는가
@@ -29,6 +30,7 @@ public class Objects : MonoBehaviour
     public float TimeToBurn { get => timeToBurn; set => timeToBurn = value; }
     public bool GetFired { get => getFired; set => getFired = value; }
     public float CurTimeToBurn { get => curTimeToBurn; set => curTimeToBurn = value; }
+    public bool IsFired { get => isFired; set => isFired = value; }
 
 
     // Start is called before the first frame update

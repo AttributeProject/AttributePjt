@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttributeBox : Unmoveable
+public class AttributeBox : Unmovable
 {
     Sprite opendBox;
     private bool isOpened=false;
@@ -23,6 +23,9 @@ public class AttributeBox : Unmoveable
             //속성상자 열리는 이벤트
             //this.gameObject.GetComponent<SpriteRenderer>().sprite = opendBox;
             isOpened = true;
+            //IsElementGet[1] = true;
+            this.gameObject.GetComponent<ElementBox_Water>().IsOpen = true;
+
         }
         else
         {

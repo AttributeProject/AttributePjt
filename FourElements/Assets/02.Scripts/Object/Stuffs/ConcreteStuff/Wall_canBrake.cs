@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wall_canBrake : Unmoveable
+public class Wall_canBrake : Unmovable
 {
     protected override void Awake()
     {

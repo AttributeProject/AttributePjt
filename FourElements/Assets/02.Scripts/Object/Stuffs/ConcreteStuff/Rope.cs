@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rope : Unmoveable
+public class Rope : Unmovable
 {
     // Start is called before the first frame update
     override protected void Awake()
