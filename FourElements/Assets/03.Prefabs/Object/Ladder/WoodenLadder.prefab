@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1924958208740465546
+--- !u!1 &5826199547174553250
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:FourElements/Assets/03.Prefabs/ClosedBox.prefab
-  - component: {fileID: 7881644932741300068}
-  - component: {fileID: 1282900360709058668}
-  - component: {fileID: 4568902899450730665}
-  - component: {fileID: 2202419650698675814}
-  m_Layer: 0
-  m_Name: ClosedBox
-  m_TagString: Untagged
-=======
   - component: {fileID: 5826199547174553260}
   - component: {fileID: 5826199547174553261}
+  - component: {fileID: 7513165244023336395}
   - component: {fileID: 184368947522838420}
   m_Layer: 0
   m_Name: WoodenLadder
   m_TagString: Ladder
->>>>>>> tutorial:FourElements/Assets/03.Prefabs/Object/Ladder/WoodenLadder.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7881644932741300068
+--- !u!4 &5826199547174553260
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924958208740465546}
+  m_GameObject: {fileID: 5826199547174553250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD:FourElements/Assets/03.Prefabs/ClosedBox.prefab
-  m_LocalPosition: {x: -6.472492, y: 0.041161776, z: 0}
-=======
   m_LocalPosition: {x: 0, y: 0, z: 0}
->>>>>>> tutorial:FourElements/Assets/03.Prefabs/Object/Ladder/WoodenLadder.prefab
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1282900360709058668
+--- !u!212 &5826199547174553261
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924958208740465546}
+  m_GameObject: {fileID: 5826199547174553250}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -83,48 +70,38 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD:FourElements/Assets/03.Prefabs/ClosedBox.prefab
-  m_Sprite: {fileID: 21300000, guid: 68eaa79d6e73c0046aa1e7015d114f92, type: 3}
-=======
   m_Sprite: {fileID: 21300000, guid: b3830035831792a4e9de57148da12d59, type: 3}
->>>>>>> tutorial:FourElements/Assets/03.Prefabs/Object/Ladder/WoodenLadder.prefab
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3, y: 1.77}
+  m_Size: {x: 1.22, y: 2.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD:FourElements/Assets/03.Prefabs/ClosedBox.prefab
---- !u!114 &4568902899450730665
+--- !u!114 &7513165244023336395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924958208740465546}
+  m_GameObject: {fileID: 5826199547174553250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 090d64ab227b5e048a4c8e39bc702d45, type: 3}
+  m_Script: {fileID: 11500000, guid: 18189e65bd88f9d4d84310e1520c04cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &2202419650698675814
-=======
+  fired: {fileID: 21300000, guid: 9c82d10bb3602be419e05c27dc6f7558, type: 3}
+  firing: {fileID: 21300000, guid: c283c6482947772449bfad6c99790847, type: 3}
 --- !u!61 &184368947522838420
->>>>>>> tutorial:FourElements/Assets/03.Prefabs/Object/Ladder/WoodenLadder.prefab
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:FourElements/Assets/03.Prefabs/ClosedBox.prefab
-  m_GameObject: {fileID: 1924958208740465546}
-=======
   m_GameObject: {fileID: 5826199547174553250}
->>>>>>> tutorial:FourElements/Assets/03.Prefabs/Object/Ladder/WoodenLadder.prefab
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -135,21 +112,12 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD:FourElements/Assets/03.Prefabs/ClosedBox.prefab
-    oldSize: {x: 3, y: 1.77}
-    newSize: {x: 3, y: 1.77}
-=======
     oldSize: {x: 5, y: 10}
     newSize: {x: 1.22, y: 2.85}
->>>>>>> tutorial:FourElements/Assets/03.Prefabs/Object/Ladder/WoodenLadder.prefab
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< HEAD:FourElements/Assets/03.Prefabs/ClosedBox.prefab
-  m_Size: {x: 3, y: 1.77}
-=======
   m_Size: {x: 5, y: 10}
->>>>>>> tutorial:FourElements/Assets/03.Prefabs/Object/Ladder/WoodenLadder.prefab
   m_EdgeRadius: 0

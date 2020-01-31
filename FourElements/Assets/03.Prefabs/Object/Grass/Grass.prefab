@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firing: {fileID: 21300000, guid: 30eb063ff31e6f140a9229775b6ff73d, type: 3}
-  fired: {fileID: 21300000, guid: 67032ec6407abb046b9dde2fec56282f, type: 3}
+  burned: {fileID: 21300000, guid: 67032ec6407abb046b9dde2fec56282f, type: 3}
   vapor: {fileID: 8745430559572222268, guid: acc776c658bbd554399733e66e3b7cae, type: 3}
 --- !u!61 &5976072692216438583
 BoxCollider2D:

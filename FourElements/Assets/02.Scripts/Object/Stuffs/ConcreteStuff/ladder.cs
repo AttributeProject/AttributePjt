@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ladder : Unmovable
+public class Ladder : Unmovable
 {
     [SerializeField]
-    private Sprite[] ladderSprite = new Sprite[4];
+    private Sprite burned;
+    [SerializeField]
+    private Sprite firing;
 
 
     override protected void Awake()
@@ -35,7 +37,7 @@ public class ladder : Unmovable
     }
     override public void burnThisObject()
     {
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = ladderSprite[1];//탄 스프라이트 넣음
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = burned;//탄 스프라이트 넣음
         //Destroy(this.gameObject, time);
     }
     override public void res_UpArrow()

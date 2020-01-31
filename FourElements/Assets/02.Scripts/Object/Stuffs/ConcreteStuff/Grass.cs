@@ -7,7 +7,7 @@ public class Grass : Unmovable
     [SerializeField]
     private Sprite firing;
     [SerializeField]
-    private Sprite fired;
+    private Sprite burned;
     [SerializeField]
     private GameObject vapor;
     private GameObject vaporSpawn;
@@ -24,7 +24,7 @@ public class Grass : Unmovable
         TimeToBurn = 2f;
         CanDestroyed = false;
 
-        IsFired = true;
+        IsBurned = false;
         Weight = transform.localScale.x * transform.localScale.y;
         TimeToBurn = Weight * 2;
 
@@ -34,14 +34,14 @@ public class Grass : Unmovable
     override protected void Update()
     {
         base.Update();
-        if (IsBurning)
+        if (IsFiring)
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = firing;
             CurTimeToBurn += Time.deltaTime;
-            if (CurTimeToBurn < TimeToBurn)
+            if (CurTimeToBurn >= TimeToBurn)
             {
-                IsBurning = false;
-                gameObject.GetComponent<SpriteRenderer>().sprite = fired;
+                IsFiring = false;
+                IsBurned = true;
+                gameObject.GetComponent<SpriteRenderer>().sprite = burned;
             }
         }
         if (IsWatered)
@@ -56,9 +56,25 @@ public class Grass : Unmovable
         }
     }
  
+    public override void res_Fire()
+    {
+        Debug.Log("풀 Fire Response");
+        if(!IsBurned && !IsFiring)
+        {
+            IsFiring = true;
+            gameObject.GetComponent<SpriteRenderer>().sprite = firing;
+        }
+    }
     public override void res_Water()
     {
         Debug.Log("풀 Water Response");
+        if(!IsBurned)
+        {
+            IsFiring = false;
+            IsBurned = true;
+            IsWatered = true;
+            gameObject.GetComponent<SpriteRenderer>().sprite = burned;
+        }
     }
 
 }
