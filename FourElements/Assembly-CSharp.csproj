@@ -72,7 +72,7 @@
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\bonFire.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\ElementBox_Water.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\Grass.cs" />
-    <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\ladder.cs" />
+    <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\Ladder.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\Propeller.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\Rope.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\SeedGround.cs" />

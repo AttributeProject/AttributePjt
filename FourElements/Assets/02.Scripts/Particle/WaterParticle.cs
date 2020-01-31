@@ -24,7 +24,7 @@ public class WaterParticle : MonoBehaviour
         if(other.tag == "Grass")
         {
             Grass grass = other.gameObject.GetComponent<Grass>();
-            if (!grass.IsFired && grass.IsBurning)
+            if (!grass.IsBurned && grass.IsFiring)
                 other.gameObject.GetComponent<Grass>().res_Water();
         }
     }
