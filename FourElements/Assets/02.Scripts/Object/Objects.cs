@@ -85,4 +85,9 @@ public class Objects : MonoBehaviour
     {
 
     }
+
+    virtual public void res_Crush()
+    {
+
+    }
 }

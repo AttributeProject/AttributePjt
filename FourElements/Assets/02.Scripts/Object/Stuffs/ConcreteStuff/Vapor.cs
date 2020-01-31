@@ -22,7 +22,7 @@ public class Vapor : Movable
         {
             collision.gameObject.GetComponent<Propeller>().IsWork = true;
         }
-        else if(collision.gameObject.tag != "Grass" && collision.gameObject.tag != "Ladder")
+        else if(collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Wall")
         {
             Destroy(this.gameObject);
         }

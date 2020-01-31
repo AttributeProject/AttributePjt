@@ -15,4 +15,9 @@ public class EndPoint : MonoBehaviour
     {
         
     }
+
+    public void res_endpoint()
+    {
+        Debug.Log("EndPoint 접촉");
+    }
 }

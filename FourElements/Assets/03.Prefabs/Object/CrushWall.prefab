@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5193898224297896801}
   - component: {fileID: 8031370457986675895}
+  - component: {fileID: 1961911989572668938}
   - component: {fileID: 5500282282437804688}
   m_Layer: 0
   m_Name: CrushWall
@@ -80,6 +81,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1961911989572668938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214450916057882712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10c8b822fbadfb43be503aa3c4b4ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &5500282282437804688
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -17,11 +17,11 @@ public class WaterParticle : MonoBehaviour
     }
     private void OnParticleCollision(GameObject other)
     {
-        if (other.tag == "SeedGround")
+        if (other.name == "SeedGround")
         {
             other.transform.GetChild(0).gameObject.SetActive(true);
         }
-        if(other.tag == "Grass")
+        if(other.gameObject.GetComponent<Grass>() != null)
         {
             Grass grass = other.gameObject.GetComponent<Grass>();
             if (!grass.IsBurned && grass.IsFiring)

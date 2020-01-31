@@ -29,7 +29,7 @@ public class Grass : Unmovable
         TimeToBurn = Weight * 2;
 
         vaporSpawn = transform.GetChild(0).gameObject;
-        spawnTimer = Random.Range(0.5f, 1f);
+        spawnTimer = Random.Range(5, 10) / 10.0f;
     }
     override protected void Update()
     {
@@ -51,7 +51,7 @@ public class Grass : Unmovable
             {
                 Instantiate(vapor, vaporSpawn.transform.position, Quaternion.identity);
                 vaporNum++;
-                spawnTimer = Random.Range(0.5f, 1f);
+                spawnTimer = Random.Range(5, 10) / 10.0f;
             }
         }
     }

@@ -815,12 +815,12 @@ PrefabInstance:
     - target: {fileID: 5102521259440567394, guid: 4166d0b0ea9c25c41adef2c7ecce3f72,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65.9
+      value: -14.8
       objectReference: {fileID: 0}
     - target: {fileID: 5102521259440567394, guid: 4166d0b0ea9c25c41adef2c7ecce3f72,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5102521259440567394, guid: 4166d0b0ea9c25c41adef2c7ecce3f72,
         type: 3}
@@ -1657,6 +1657,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2024495563375885137, guid: 15e04f1833fc0244eb1814fc1dee90bc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ladder
+      objectReference: {fileID: 0}
     - target: {fileID: 2888621066557656188, guid: 15e04f1833fc0244eb1814fc1dee90bc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2102,7 +2107,7 @@ PrefabInstance:
     - target: {fileID: 7650290354188467336, guid: 1909f681c460e204ca9f631410b9f5ac,
         type: 3}
       propertyPath: m_TagString
-      value: SeedGround
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7082118010780703223, guid: 1909f681c460e204ca9f631410b9f5ac,
         type: 3}
@@ -2257,7 +2262,7 @@ PrefabInstance:
     - target: {fileID: 7650290354188467336, guid: 1909f681c460e204ca9f631410b9f5ac,
         type: 3}
       propertyPath: m_TagString
-      value: SeedGround
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7082118010780703223, guid: 1909f681c460e204ca9f631410b9f5ac,
         type: 3}
@@ -3916,6 +3921,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2826629199655700433, guid: 3c8311525a59a7b42876558a52b1459c,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826629199655700433, guid: 3c8311525a59a7b42876558a52b1459c,
+        type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c8311525a59a7b42876558a52b1459c, type: 3}
 --- !u!4 &1937982963 stripped
@@ -4164,7 +4179,7 @@ PrefabInstance:
     - target: {fileID: 7613974439849626231, guid: be8cb2dbd58c9504db4671f25dc903c7,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8cb2dbd58c9504db4671f25dc903c7, type: 3}
