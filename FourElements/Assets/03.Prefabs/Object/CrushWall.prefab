@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5193898224297896801}
   - component: {fileID: 8031370457986675895}
+  - component: {fileID: 1961911989572668938}
   - component: {fileID: 5500282282437804688}
   m_Layer: 0
   m_Name: CrushWall
@@ -69,17 +70,29 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7fc6d4ba524a03642bf1bce042e59707, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ebb050ecb657b8942870e42a0c310414, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5, y: 7.5}
+  m_Size: {x: 1.86, y: 4.99}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1961911989572668938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214450916057882712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10c8b822fbadfb43be503aa3c4b4ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &5500282282437804688
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -98,7 +111,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5, y: 7.5}
-    newSize: {x: 5, y: 7.5}
+    newSize: {x: 1.86, y: 4.99}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
