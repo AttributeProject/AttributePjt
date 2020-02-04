@@ -8,6 +8,10 @@ TagManager:
   - WoodBox
   - Ladder
   - ElementBox(Water)
+  - SeedGround
+  - Grass
+  - Propeller
+  - Rail
   layers:
   - Default
   - TransparentFX

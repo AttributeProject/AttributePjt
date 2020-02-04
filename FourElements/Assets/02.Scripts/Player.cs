@@ -44,7 +44,6 @@ public class Player : Characters
             }
             Move();
         }
-        Debug.Log(Property);
     }
 
     private void SetStats()
@@ -89,7 +88,7 @@ public class Player : Characters
         {
             transform.rotation = Quaternion.Euler(0, 180f, 0);
         }
-        else
+        else if(h > 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
@@ -157,14 +156,14 @@ public class Player : Characters
     //collision과 접촉을 한 경우
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "WoodBox")
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "WoodBox" || collision.gameObject.tag == "SeedGround")
         {
             IsJump=false;
         }
         
     }
     // collision과 접촉 상태를 유지하고 있는경우
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "WoodBox")
         {
