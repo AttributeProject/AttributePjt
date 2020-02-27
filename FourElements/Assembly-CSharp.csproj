@@ -83,12 +83,14 @@
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\SeedGround.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\SquareStone.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\Stool.cs" />
+    <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\UpWind.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\Vapor.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\ConcreteStuff\WoodBox.cs" />
     <Compile Include="Assets\02.Scripts\Object\Stuffs\Stuffs.cs" />
     <Compile Include="Assets\02.Scripts\Object\Unmovable.cs" />
     <Compile Include="Assets\02.Scripts\Particle\FireParticle.cs" />
     <Compile Include="Assets\02.Scripts\Particle\ParticleController.cs" />
+    <Compile Include="Assets\02.Scripts\Particle\RockAbility.cs" />
     <Compile Include="Assets\02.Scripts\Particle\WaterParticle.cs" />
     <Compile Include="Assets\02.Scripts\Terrains.cs" />
     <Compile Include="Assets\02.Scripts\UI\TestRoomUIManager.cs" />

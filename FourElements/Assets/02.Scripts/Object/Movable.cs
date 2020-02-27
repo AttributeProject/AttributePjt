@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class Movable : Stuffs
 {
+    private bool isRolling; // 굴러갈 수 있는가
+
+    public bool IsRolling { get => isRolling; set => isRolling = value; }
     // Start is called before the first frame update
-    void Start()
+    override protected void Awake()
     {
-        
+        base.Awake();
+        isRolling = false;
     }
 
     // Update is called once per frame
-    void Update()
+    override protected void Update()
     {
         
     }

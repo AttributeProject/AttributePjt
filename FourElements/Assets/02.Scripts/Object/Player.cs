@@ -28,6 +28,7 @@ public class Player : Characters
     {
         curAttribute = Attribute.FIRE;
         IsElementGet[0] = true;
+        IsElementGet[2] = true;
         IsJump = false;
         CanMove = true;
         Weight = 2f;
@@ -79,9 +80,9 @@ public class Player : Characters
         }
         else if (Property == 2)
         {
-            Weight = 4f;
-            Speed = 10f;
-            JumpPower = 20f;
+            Weight = 10f;
+            Speed = 15f;
+            JumpPower = 30f;
         }
         else if (Property == 3)
         {
@@ -156,19 +157,39 @@ public class Player : Characters
         }
         if (IsElementGet[2] == true)
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = appearance[2];
+            elementsTab.transform.GetChild(2).gameObject.SetActive(true);
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                elementsTab.transform.GetChild(2).GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
+                gameObject.GetComponent<SpriteRenderer>().sprite = appearance[2];
+                Property = 2;
+            }
 
         }
         if (IsElementGet[3] == true)
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = appearance[3];
+            elementsTab.transform.GetChild(3).gameObject.SetActive(true);
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                elementsTab.transform.GetChild(3).GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
+                gameObject.GetComponent<SpriteRenderer>().sprite = appearance[3];
+                Property = 3;
+            }
 
         }
         SetStats();
         elementsTab.transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 127);
         elementsTab.transform.GetChild(1).GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 127);
+        elementsTab.transform.GetChild(2).GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 127);
+        elementsTab.transform.GetChild(3).GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 127);
 
     }
+
+
+
+
+
+
     //------------------------------------------Collision 처리-----------------------------------------------
     //collision과 접촉을 한 경우
     override protected void OnCollisionEnter2D(Collision2D col)
