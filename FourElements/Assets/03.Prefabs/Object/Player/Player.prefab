@@ -9008,7 +9008,7 @@ ParticleSystem:
     interiorCollisions: 0
   TriggerModule:
     enabled: 0
-    collisionShape0: {fileID: 0}
+    collisionShape0: {fileID: 3857900609013522773}
     collisionShape1: {fileID: 0}
     collisionShape2: {fileID: 0}
     collisionShape3: {fileID: 0}
