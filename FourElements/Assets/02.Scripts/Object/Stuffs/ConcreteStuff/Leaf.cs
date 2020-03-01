@@ -26,14 +26,14 @@ public class Leaf : Movable
     {
         base.Update();
         //Debug.Log(Mathf.Abs(first.x - transform.position.x));
-        Debug.Log(new Vector2(range / transform.position.x * dir.x, -1));
-        if(Mathf.Abs(first.x - transform.position.x) >= range)
-        {
-            dir = -dir;
-            //transform.rotation = Quaternion.Euler(0, -transform.rotation.y + 180, 0);
-        }
+        //Debug.Log(new Vector2(range / transform.position.x * dir.x, -1));
         if(!isGround)
         {
+            if (Mathf.Abs(first.x - transform.position.x) >= range)
+            {
+                dir = -dir;
+                //transform.rotation = Quaternion.Euler(0, -transform.rotation.y + 180, 0);
+            }
             transform.Translate(new Vector2(range/ (Mathf.Abs(first.x - transform.position.x)+1) * dir.x, -1) * Time.deltaTime * speed);
         }
     }
@@ -43,6 +43,7 @@ public class Leaf : Movable
         base.OnCollisionEnter2D(collision);
         if(collision.gameObject.tag == "Ground")
         {
+            Debug.Log("작동중지");
             isGround = true;
         }
     }
