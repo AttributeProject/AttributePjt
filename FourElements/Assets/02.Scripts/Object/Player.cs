@@ -179,13 +179,16 @@ public class Player : Characters
             IsJump = false;
         }
         //만약 내가 불 속성이고 충돌한 물체가 불이 붙을 수 있는 오브젝트라면
-        if (col.gameObject.tag != "Ground")
+        if (col.gameObject.GetComponent<Objects>() != null)
+        {
+            Debug.Log(col.gameObject.name + "col");
             if (curAttribute == Attribute.FIRE && col.gameObject.GetComponent<Objects>().CanCatchFired)
             {
                 Debug.Log("burn");
                 // 태운다
                 col.gameObject.GetComponent<Objects>().burnThisObject();
             }
+        }
     }
     // collision과 접촉 상태를 유지하고 있는경우
     private void OnCollisionStay2D(Collision2D col)
@@ -197,7 +200,6 @@ public class Player : Characters
             col.gameObject.transform.position += new Vector3(h, 0, 0);
             transform.position += new Vector3(h, 0, 0);
         }
-
     }
     // collision과 접촉 상태를 유지하고 있는경우
     private void OnStay2D(Collision2D collision)
@@ -222,13 +224,20 @@ public class Player : Characters
     private void OnTriggerStay2D(Collider2D col)
     {
         Debug.Log(col.name + " 트리거 접촉중");
-        if (col.gameObject.tag != "Ground")
+        if (col.gameObject.tag == "EndPoint")
+        {
+            col.gameObject.GetComponent<EndPoint>().res_endpoint();
+        }
+        if (col.gameObject.GetComponent<Objects>() != null)
+        {
+            Debug.Log(col.name);
             if (curAttribute == Attribute.FIRE && col.gameObject.GetComponent<Objects>().CanCatchFired)
             {
                 Debug.Log("burn");
                 // col.gameObject.GetComponent<Objects>().res_Fire();
 
             }
+        }
         if (Input.GetKey(KeyCode.UpArrow))
         {
             Debug.Log(col.name + " 트리거 접촉중 UpArrow 누름");
