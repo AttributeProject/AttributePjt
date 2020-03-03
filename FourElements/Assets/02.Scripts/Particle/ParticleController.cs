@@ -8,7 +8,7 @@ public class ParticleController : MonoBehaviour
     private GameObject Player;
 
     private int nowProperty;
-    private ParticleSystem[] ps = new ParticleSystem[4];
+    private ParticleSystem[] ps = new ParticleSystem[2];
     private bool isPlay = false;
 
     // Start is called before the first frame update
@@ -25,15 +25,31 @@ public class ParticleController : MonoBehaviour
     void Update()
     {
         nowProperty = Player.GetComponent<Player>().Property;
-        if (Input.GetKey(KeyCode.LeftShift) && !isPlay)
+
+        // 임시, 속성이 바위라면
+        if(nowProperty == 2)
         {
-            ps[nowProperty].Play(true);
-            isPlay = true;
+            if(Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.GetChild(2).GetComponent<CircleCollider2D>().enabled = true;
+            }
+            else
+            {
+                transform.GetChild(2).GetComponent<CircleCollider2D>().enabled = false;
+            }
         }
-        if(!Input.GetKey(KeyCode.LeftShift))
+        else
         {
-            ps[nowProperty].Stop(true, ParticleSystemStopBehavior.StopEmitting);
-            isPlay = false;
+            if (Input.GetKey(KeyCode.LeftShift) && !isPlay)
+            {
+                ps[nowProperty].Play(true);
+                isPlay = true;
+            }
+            if (!Input.GetKey(KeyCode.LeftShift))
+            {
+                ps[nowProperty].Stop(true, ParticleSystemStopBehavior.StopEmitting);
+                isPlay = false;
+            }
         }
     }
 }

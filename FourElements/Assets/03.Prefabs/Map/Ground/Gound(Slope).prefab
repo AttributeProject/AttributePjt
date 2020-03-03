@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 413079260476284171}
   - component: {fileID: 413079260476284164}
   - component: {fileID: 413079260476284165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gound(Slope)
   m_TagString: Ground
   m_Icon: {fileID: 0}

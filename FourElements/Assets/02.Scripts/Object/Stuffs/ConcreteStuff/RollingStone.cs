@@ -5,9 +5,9 @@ using UnityEngine;
 public class RollingStone : Movable
 {
     // Start is called before the first frame update
-    void Start()
+    override protected void Awake()
     {
-        
+        base.Awake();
     }
 
     // Update is called once per frame

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2283959010688464450}
   - component: {fileID: 2283959010688464449}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CaveGround
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2283959010932077215}
   - component: {fileID: 2283959010932077208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CaveGound (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2283959011892197362}
   - component: {fileID: 2283959011892197363}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CaveGound
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2283959012193227049}
   - component: {fileID: 2283959012193227050}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CaveGound (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}

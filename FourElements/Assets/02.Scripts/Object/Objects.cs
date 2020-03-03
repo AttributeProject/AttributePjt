@@ -15,14 +15,12 @@ public class Objects : MonoBehaviour
     private bool canMoved; // 움직여질 수 있는가
     private bool canDestroyed; // 파괴될 수 있는가
     private float maxIndureImpurse;//견딜수 있는 최대 충격 량
-    private bool isRolling; // 굴러갈 수 있는가
     private float weight; // 무게
 
     public bool CanCatchFired { get => canCatchFired; set => canCatchFired = value; }
     public bool CanMove { get => canMove; set => canMove = value; }
     public bool CanMoved { get => canMoved; set => canMoved = value; }
     public bool CanDestroyed { get => canDestroyed; set => canDestroyed = value; }
-    public bool IsRolling { get => isRolling; set => isRolling = value; }
     public float Weight { get => weight; set => weight = value; }
     public bool IsRise { get => isRise; set => isRise = value; }
     public bool IsFiring { get => isFiring; set => isFiring = value; }
@@ -42,9 +40,7 @@ public class Objects : MonoBehaviour
         CanMove = false;
         CanMoved = false;
         IsRise = false;
-        IsRolling = false;
         MaxIndureImpurse = 0f;
-
     }
 
 
